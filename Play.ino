@@ -31,7 +31,7 @@ void setup () {
     Serial.println("Init failed");
     while(1);
   }
-  mp3.setVolume(25);
+  mp3.setVolume(25); // Głośność ustawiamy w zakresie 0-256 lub w procentach 0% - 100%
   Serial.print("Device: ");
   Serial.println(mp3.getCurrentDevice()==1?"U-Disk":"microSD");
 
